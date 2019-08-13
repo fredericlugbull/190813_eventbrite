@@ -18,7 +18,6 @@ Attendance.destroy_all
 description: Faker::Lorem.characters, first_name: first_name, last_name: last_name)
 end
 
-
 5.times do
 	e = Event.new(start_date: Faker::Time.forward(days: 23).to_datetime,
 		duration: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60].sample,

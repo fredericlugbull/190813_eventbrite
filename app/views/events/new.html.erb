@@ -1,0 +1,42 @@
+<html>
+
+    <body>
+        <div class="jumbotron gossip">
+            <h1 class="display-4">Welcome <%= @first_name %>!<br>Ici tu vas pouvoir créer l'event de tes rêves!</h1>
+            <hr class="my-4">
+        </div>
+
+    <!-- ... -->
+
+    <%= form_tag url_for(action: 'create'), method: "post" do %>    
+
+      <%= label_tag 'Start date' %>
+      <%= text_field_tag 'Start date' %>
+      <br /> <br />
+
+      <%= label_tag 'Location' %>
+      <%= text_area_tag 'Location' %>
+      <br /> <br />
+
+      <%= label_tag 'Duration' %>
+      <%= text_area_tag 'Duration' %>
+      <br /> <br />
+
+      <%= label_tag 'Price' %>
+      <%= text_area_tag 'Price' %>
+      <br /> <br />
+
+      <%= label_tag 'Location' %>
+      <%= text_area_tag 'Location' %>
+      <br /> <br />
+
+      <%= submit_tag "Create Event" %>
+
+    <% end %>
+
+    <!-- ... -->
+
+
+
+    </body>
+</html>
